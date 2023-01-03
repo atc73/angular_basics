@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'demo-angular';
+  title = 'Alboukazim';
+  valeurInput = 'une valeur venant du composant';
+  zoneSaisie: any;
+
+  onClick() {
+    console.log("Button clicked!")
+  }
 }

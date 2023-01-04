@@ -19,4 +19,17 @@
   <div>
     {{zoneSaisie}}
   </div>
+  <div>
+    <h1>Part 2</h1>
+    <app-pied-de-page [nomApplication]="title"></app-pied-de-page>
+  </div>
+  <div>
+    <h1>Les directives</h1>
+  </div>
+  <div *ngIf="informations && informations.length>0">
+    <ul>
+      <li *ngFor="let info of informations">{{info}}</li>
+    </ul>
+  </div>
+
 </div>

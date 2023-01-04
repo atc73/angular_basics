@@ -9,6 +9,10 @@ export class AppComponent {
   title = 'Alboukazim';
   valeurInput = 'une valeur venant du composant';
   zoneSaisie: any;
+  informations: string[] = [
+    'La France est en quart',
+    'Le canard est dans la voiture'
+  ]
 
   onClick() {
     console.log("Button clicked!")

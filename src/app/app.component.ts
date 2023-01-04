@@ -11,8 +11,14 @@ export class AppComponent {
   zoneSaisie: any;
   informations: string[] = [
     'La France est en quart',
-    'Le canard est dans la voiture'
-  ]
+    'Le canard est dans la voiture',
+    'La fraise est toute verte'
+  ];
+  classesAAppliquer = {
+    'rouge': this.informations.length <= 2,
+    'vert': this.informations.length > 2
+  }
+  dateCreationComposant = new Date();
 
   onClick() {
     console.log("Button clicked!")

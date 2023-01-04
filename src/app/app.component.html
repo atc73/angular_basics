@@ -26,10 +26,17 @@
   <div>
     <h1>Les directives</h1>
   </div>
-  <div *ngIf="informations && informations.length>0">
+  <div *ngIf="informations && informations.length > 0" [ngClass]="classesAAppliquer">
     <ul>
       <li *ngFor="let info of informations">{{info}}</li>
     </ul>
+  </div>
+  <div *ngIf="!informations || informations.length == 0">
+    Il n'y a pas d'informations à présenter
+  </div>
+  <div>
+    <h1>Pipes</h1>
+    <p>Date de création du composant : {{dateCreationComposant | date: 'dd MMMM YYYY' | uppercase}}</p>
   </div>
 
 </div>

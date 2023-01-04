@@ -38,5 +38,10 @@
     <h1>Pipes</h1>
     <p>Date de création du composant : {{dateCreationComposant | date: 'dd MMMM YYYY' | uppercase}}</p>
   </div>
-
+  <div>
+    <h1>Services</h1>
+    <ul>
+      <li *ngFor="let n of nombres" [ngClass]="getClasses(n)">{{n}}</li>
+    </ul>
+  </div>
 </div>
